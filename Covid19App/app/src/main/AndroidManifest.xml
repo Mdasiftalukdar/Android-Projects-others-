@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.EmergencyHealthcare">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/healthcare"
+        android:label="Health Care"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.EmergencyHealthcare.FindHospital.FindNearestHospital"></activity>
+        <activity android:name="com.example.EmergencyHealthcare.auth.ResetPasswordActivity" />
+        <activity android:name="com.example.EmergencyHealthcare.auth.LoginActivity" />
+        <activity android:name="com.example.EmergencyHealthcare.auth.SignupActivity" />
+        <activity android:name="com.example.EmergencyHealthcare.startHomePage" />
+        <activity android:name="com.example.EmergencyHealthcare.AboutActicity" />
+        <activity android:name="com.example.EmergencyHealthcare.VolunteerDocSignup.VolunteerDocSignupActivity" />
+        <activity android:name="com.example.EmergencyHealthcare.myths.MythsActivity" />
+        <activity android:name="com.example.EmergencyHealthcare.gov_hospital.govHospitalActivity" />
+        <activity
+            android:name="com.example.EmergencyHealthcare.CountryData.CountryDataActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.example.EmergencyHealthcare.CallNationalHelpLine.callNationalHelplineActivity" />
+        <activity android:name="com.example.EmergencyHealthcare.CallDoctor.CallDoctorActivity" />
+        <activity android:name="com.example.EmergencyHealthcare.Donation" />
+        <activity android:name="com.example.EmergencyHealthcare.situation_btn" />
+        <activity android:name="com.example.EmergencyHealthcare.doc_em_btn" />
+        <activity android:name="com.example.EmergencyHealthcare.news_activity" />
+        <activity android:name="com.example.EmergencyHealthcare.landingpage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.EmergencyHealthcare.homepage" />
+        <activity android:name="com.example.EmergencyHealthcare.covid_btn" />
+        <activity android:name="com.example.EmergencyHealthcare.sym_prv_btn" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
